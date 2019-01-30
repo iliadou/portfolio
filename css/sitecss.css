@@ -1,0 +1,401 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+p, span {
+  font-family: 'Montserrat', -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #30303e;
+}
+
+a {
+  color: #30303e;
+}
+
+a:hover {
+  color: #cc9999;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #30303e;
+}
+
+section {
+  padding: 25px 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+}
+
+.btn {
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #fec810 !important;
+  border-color: #fec810 !important;
+  color: white;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+::-moz-selection {
+  background: #fed136;
+  text-shadow: none;
+}
+
+::selection {
+  background: #fed136;
+  text-shadow: none;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+#mainNav {
+  background-color: #212529;
+}
+
+#mainNav .navbar-toggler {
+  right: 0;
+  width: 60px;
+}
+
+#mainNav .navbar-brand {
+  color: #30303e;
+}
+
+#mainNav .navbar-brand .logo-nav {
+  right: 0;
+  width: 50px;
+}
+
+@media (max-width: 766px) {
+  #mainNav .navbar-brand .logo-nav {
+    width: 40px;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #30303e;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 2px;
+  color: white;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #cc9999;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #30303e;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+header.masthead {
+  padding-top: calc(6rem + 50px);
+  padding-bottom: 6rem;
+  text-align: center;
+  color: white;
+}
+
+header.masthead img.logo-signature {
+  width: 100px;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 766px) {
+  header.masthead img.logo-signature {
+    width: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  header.masthead img.logo-signature {
+    width: 150px;
+  }
+}
+
+.bg-light {
+  background-color: #fbfbfb !important;
+}
+
+.bg-color {
+  background-color: #99cccc !important;
+}
+
+.skills-part .skills-details {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .skills-part .skills-details {
+    padding: 0 0 0 1rem;
+    border-left: 0.5rem solid #cc9999;
+    min-height: 100px;
+  }
+}
+
+.workflow {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.workflow:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: '';
+  background-color: #30303e;
+}
+
+.workflow > li {
+  position: relative;
+  min-height: 50px;
+}
+
+.workflow > li:after, .workflow > li:before {
+  display: table;
+  content: ' ';
+}
+
+.workflow > li:after {
+  clear: both;
+}
+
+.workflow > li .workflow-panel {
+  position: relative;
+  float: right;
+  width: 65%;
+  padding: 20px 20px 0 100px;
+  text-align: left;
+}
+
+.workflow > li .workflow-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.workflow > li .workflow-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.workflow > li .workflow-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 200px;
+  height: auto;
+  margin-left: 0;
+  text-align: center;
+}
+
+.workflow > li.workflow-inverted > .workflow-panel {
+  float: right;
+  padding: 20px 20px 0 100px;
+  text-align: left;
+}
+
+.workflow > li.workflow-inverted > .workflow-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.workflow > li.workflow-inverted > .workflow-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.workflow .workflow-body > ul,
+.workflow .workflow-body > p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .workflow:before {
+    left: 50%;
+  }
+  .workflow > li {
+    min-height: 100px;
+    margin-bottom: 100px;
+  }
+  .workflow > li .workflow-panel {
+    float: left;
+    width: 32%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .workflow > li .workflow-image {
+    left: 50%;
+    width: 240px;
+    height: auto;
+    margin-left: -120px;
+  }
+  .workflow > li .workflow-image h4 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+  .workflow > li.workflow-inverted > .workflow-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .workflow > li {
+    min-height: 150px;
+  }
+  .workflow > li .workflow-panel {
+    padding: 0 20px 20px;
+  }
+  .workflow > li .workflow-image {
+    width: 300px;
+    height: auto;
+    margin-left: -150px;
+  }
+  .workflow > li .workflow-image h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+  .workflow > li.workflow-inverted > .workflow-panel {
+    padding: 0 20px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .workflow > li .workflow-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .workflow > li .workflowe-image {
+    width: 360px;
+    height: auto;
+    margin-left: -180px;
+  }
+  .workflow > li .workflow-image h4 {
+    margin-top: 40px;
+  }
+  .workflow > li.workflow-inverted > .workflow-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+
+.happy-day, .profile {
+  max-width: 150px;
+}
+
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .contact-icons {
+  width: 50px;
+  height: auto;
+}
+
+footer {
+  padding: 0;
+  text-align: center;
+}
+
+footer .contact-section img.logo-signature {
+  height: 100px;
+}
+
+@media (max-width: 766px) {
+  footer .contact-section img.logo-signature {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .contact-section img.logo-signature {
+    height: 150px;
+  }
+}
+
+footer span.copyright {
+  line-height: 40px;
+}
